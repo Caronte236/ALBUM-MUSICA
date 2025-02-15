@@ -1,12 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MY HOUSE IS NOT A HOME</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: url(RECURSOS/35494.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center; 
+            color: antiquewhite; 
+            font-family: "Lato", serif;
+            font-weight: 700;
+             font-style: normal;  
+        }
+        body::before{
+            content: "";
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            backdrop-filter: blur(3px); 
+            z-index: -1; 
+            top: 0;
+
+        }
+        table {
+            width: 80%;
+            margin-top: 120px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.164);
+            border-radius: 15px;
+        }
+
+        td.title {
+            background-color: #2f4858bd;
+            color: #4fa1d4;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+            text-shadow: 2px 2px 6px rgb(1, 20, 29);
+        }
+
+        td.title2 {
+            color: #2bd864;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            text-shadow: 2px 2px 6px rgb(0, 14, 4);
+        }
+
+        td.poster {
+            text-align: center;
+            padding: 20px;
+        }
+
+        td.poster img {
+            width: 100%;
+            max-width: 300px; 
+            height: auto;
+            border-radius: 10px;
+        }
+
+        td.personajes {
+            text-align: center;
+            padding: 20px;
+        }
+
+        td.personajes img {
+            width: 150px; 
+            height: auto;
+            border-radius: 10px;
+        }
+
+        td.texto {
+            padding: 20px;
+            font-size: 18px;
+            text-align: justify;
+        }
+    
+        td.personajes:hover {
+            background-color: #7abd7a71;
+            transition: background-color 0.3s;
+        }
+
+        .LINKS-MUSICA img {
+            border-radius: 60%;
+            width: 50px;
+            margin-left: 100px;   
+        }
+
+        .LINKS-MUSICA img:hover {
+            transform: scale(1.2);
+            background-color: aliceblue;
+        }
+
+  
+       
+    </style>
 </head>
-<body>
+<body >
     <header>
         <a href="index.html"><img src="RECURSOS/NAVEGACION/photo-1614680376573-df3480f0c6ff-removebg-preview.png" alt="logo" width="80px"></a>
         <a href="index.html">HOME</a>
@@ -15,8 +118,91 @@
         <a href="#">PAGINA03</a>
         <img src="RECURSOS/NAVEGACION/XOsX.gif" alt="gif" width="30PX" style="margin-left: 80px;">
     </header>
+    <div class="hero-section">
+        <div class="hero-image"></div>
+    </div>
     <table>
+        <tr>
+            <td colspan="4" class="title"> MUSICA EN INGLÉS </td>
+        </tr>
+        
+        <tr>
+            <td class="poster">
+                <img src="RECURSOS/prueba.png" alt="Poster de la cancion">
+            </td>
+            <td>
+                <h3>My house is not a home (d4dv)</h3>
+                <ul>
+                    <li>Artista: d4vd (David Burke).</li>
+                    <li>Género: Indie pop, bedroom pop, alternativo</li>
+                    <li>Año de lanzamiento: 2022</li>
+                    <li>Álbum: La canción forma parte del EP "Petals to Thorns", que fue lanzado en 2023.</li>
+                    <li>Compositores: d4vd es el principal compositor de la canción, junto con colaboradores como Jonah Shy y otros productores</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0ssxoYXlw70MY4lh3JsI9q?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="4" class="title2"> <B> ARTISTAS INVOLUCRADOS <B></td>
+        </tr>
 
+        <tr>
+            <td class="personajes">
+                <img src="RECURSOS/jonah shy.jpg" alt="jonah shy">
+                <p><li><strong>Jonah Shy:</strong> Co-compositor y productor (colaborador frecuente de d4vd).</li></p>
+            </td>
+            <td class="personajes">
+                <img src="RECURSOS/d4dv.jpg" alt="d4dv">
+                <p><li><strong>d4vd (David Burke):</strong> Artista principal, vocalista y compositor.</li></p>
+            </td>
+        </tr>
+     
+        <tr>
+            <td colspan="4" class="title2"> <B> SINOPSIS <B></td>
+        </tr>
+        <tr>
+            <td class="personajes">
+                <img src="RECURSOS/15655.gif">
+            </td>
+            <td colspan="4" class="texto">
+                <p>La canción "My House Is Not a Home" explora temas de soledad, desapego y la sensación de no pertenecer a un lugar que debería ser reconfortante. La letra refleja la lucha emocional de sentirse perdido en un espacio que, en teoría, debería ser un refugio. Es una canción introspectiva y melancólica, pero con un toque de esperanza.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="4" class="title2"> <B> CURIOSIDADES <B></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="texto">
+                <p>d4vd comenzó su carrera musical casi por accidente, creando música en su habitación con herramientas básicas. Su enfoque DIY (hágalo usted mismo) lo ha convertido en un ícono del bedroom pop.</p>
+                <p>El EP "Petals to Thorns", que incluye esta canción, ha sido elogiado por su cohesión temática y su profundidad emocional.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="4" class="title2"> <B> DISPONIBILIDAD <B></td>
+        </tr>
+        <tr>
+            <td class="personajes">
+                <img src="RECURSOS/NAVEGACION/XOsX.gif">
+            </td>
+            <td colspan="3" class="texto">
+                <p>Disponibilidad de "My House Is Not a Home" de d4vd </p>
+                <p>La canción "My House Is Not a Home" de d4vd está disponible en las siguientes plataformas de streaming y compra digital. ¡Haz clic en los enlaces para escucharla o añadirla a tu colección!</p>
+                <br>
+                <hr>
+                <br>
+                <div class="LINKS-MUSICA">
+                    <a href="https://open.spotify.com/intl-es/track/0ssxoYXlw70MY4lh3JsI9q?si=104dee82eb5b4bce"><img src="RECURSOS/ICONOS/spotify_icon-icons.com_65503.png" alt=""></a>
+                    <a href="https://music.youtube.com/watch?v=cBYKAvw_4uM&si=tLkm39BjZqxOwXzE"><img src="RECURSOS/ICONOS/youtube_music_logo_icon_256785.png" alt=""></a>
+                </div>
+            </td>
+        </tr>
     </table>
 </body>
 </html>
