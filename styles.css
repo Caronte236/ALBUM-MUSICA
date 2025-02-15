@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+header a {
+    color: rgb(250, 247, 247);
+    margin-left: 100px;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: gold;
+    transition: 1s;
+    text-decoration: overline;
+}
+
+header {
+    position: fixed; 
+    top: 0; 
+    display: flex;
+    align-items: center;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.733);
+    width: 100%;
+    height: 60px; 
+}
+
+header a:hover {
+    color: rgb(255, 174, 69);
+}
+
+header img:hover {
+    transform: scale(1.2);
+}
+
