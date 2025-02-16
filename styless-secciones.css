@@ -46,6 +46,8 @@
     top: 50%;
     left: 40%;    
     color: aliceblue;
+    text-shadow: 2px 2px 6px rgb(41, 243, 176);
+
 }
 body{
     background-color: rgba(12, 24, 48, 0.842);
