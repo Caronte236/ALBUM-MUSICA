@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño total */
 }
 
 .hero-section {
     position: relative;
-    height: 100vh;
-    width: 100%;
+    height: 100vh; 
+    width: 100%; 
 }
 
 .hero-image {
@@ -14,8 +15,8 @@
     background-image: url('RECURSOS/hero.gif');
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 50%;
+    width: 100%; 
+    height: 50%; 
     z-index: -4;
 }
 
@@ -26,7 +27,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.322); /* Capa de color */
+    background-color: rgba(0, 0, 0, 0.322); 
     z-index: -1;
 }
 
@@ -43,13 +44,14 @@
 
 .hero-text h1 {
     position: absolute;
-    top: 50%;
-    left: 40%;    
+    top: 50%; 
+    left: 30%; 
     color: aliceblue;
     text-shadow: 2px 2px 6px rgb(41, 243, 176);
-
+    font-size: clamp(24px, 4vw, 48px); 
 }
-body{
+
+body {
     background-color: rgba(12, 24, 48, 0.842);
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -57,40 +59,40 @@ body{
 
 table {
     position: absolute; 
-    top: 350px; 
+    top: 60vh; 
     left: 10%; 
-    right: auto;
-    width: 80%;
+    width: 80%; 
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.164);
     border-radius: 15px;
     z-index: 1; 
 }
 
-
-hr{
+hr {
     height: 3px;
     background-color: aliceblue;
-    margin-top: 6px;
-}
-td img{
-    width: 50px;
-    padding: 6px;
+    margin-top: 1vh; 
 }
 
-td img:hover{
+td img {
+    width: clamp(50px, 5vw, 80px); /* Tamaño mínimo de 50px, ideal de 5vw, máximo de 80px */
+    height: auto; 
+    padding: 1vh; 
+}
+
+td img:hover {
     transform: scale(1.2);
 }
 
-
-td a{
+td a {
     color: white;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 7px;
+    margin-left: 1vw; 
+    font-size: clamp(14px, 1.5vw, 18px); /* Tamaño mínimo de 14px, ideal de 1.5vw, máximo de 18px */
 }
 
-td a:hover{
+td a:hover {
     color: rgb(44, 6, 95);
-    text-decoration:none;
+    text-decoration: none;
 }
