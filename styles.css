@@ -30,7 +30,7 @@ header a {
 
 
 header a:hover {
-    color: rgb(0, 255, 136);
+    color: rgb(37, 247, 149);
     transition: 1s;
     text-decoration: overline;
 }
