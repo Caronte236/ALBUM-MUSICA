@@ -48,7 +48,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-table {
+table{
     position: absolute; 
     top: 60vh; 
     left: 10%; 
@@ -65,17 +65,17 @@ hr {
     margin-top: 1vh; 
 }
 
-td img {
+.portada{
     width: clamp(50px, 5vw, 80px); /* Tamaño mínimo de 50px, ideal de 5vw, máximo de 80px */
     height: auto; 
     padding: 1vh; 
 }
 
-td img:hover {
+.portada:hover {
     transform: scale(1.2);
 }
 
-td a {
+.titulo {
     color: white;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -83,7 +83,19 @@ td a {
     font-size: clamp(14px, 1.5vw, 18px); /* Tamaño mínimo de 14px, ideal de 1.5vw, máximo de 18px */
 }
 
-td a:hover {
-    color: rgb(44, 6, 95);
+.titulo:hover {
+    color: rgb(12, 177, 136);
     text-decoration: none;
 }
+
+.autor{
+    color: rgb(160, 159, 159);
+    text-decoration: none;
+    margin-left: 1em;
+    
+}
+
+.autor:hover{
+    text-decoration: underline;
+}
+
