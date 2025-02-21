@@ -28,9 +28,8 @@ header a {
     font-size: clamp(12px, 1.5vw, 18px); /* Tamaño mínimo de 12px, ideal de 1.5vw, máximo de 18px */
 }
 
-
 header a:hover {
-    color: rgb(37, 247, 149);
+    color: rgb(0, 255, 136);
     transition: 1s;
     text-decoration: overline;
 }
