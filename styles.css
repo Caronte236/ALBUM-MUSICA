@@ -21,7 +21,7 @@ header {
 
 header a {
     color: rgb(250, 247, 247);
-    margin-left: 5%; 
+    margin-left: 6%; 
     font-family: "Roboto Mono", serif;
     font-optical-sizing: auto;
     text-decoration: none;
@@ -35,8 +35,9 @@ header a:hover {
 }
 
 header img {
-    width: clamp(40px, 5vw, 60px); /* Tamaño mínimo de 40px, ideal de 5vw, máximo de 60px */
+    width: clamp(120px, 7vw, 120px); /* Tamaño mínimo de 40px, ideal de 5vw, máximo de 60px */
     height: auto; 
+    ;
 }
 
 header img:hover {
