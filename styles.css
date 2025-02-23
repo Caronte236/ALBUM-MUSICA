@@ -25,7 +25,7 @@ header a {
     font-family: "Roboto Mono", serif;
     font-optical-sizing: auto;
     text-decoration: none;
-    font-size: clamp(12px, 1.5vw, 18px); /* Tamaño mínimo de 12px, ideal de 1.5vw, máximo de 18px */
+    font-size: clamp(12px, 1.5vw, 18px); 
 }
 
 header a:hover {
@@ -35,7 +35,7 @@ header a:hover {
 }
 
 header img{
-    width: clamp(100px, 7vw, 100px); /* Tamaño mínimo de 40px, ideal de 5vw, máximo de 60px */
+    width: clamp(100px, 7vw, 100px); 
     height: auto; 
 }
 
@@ -44,6 +44,41 @@ header img:hover {
 }
 
 header img[alt="gif"] {
-    width: clamp(20px, 3vw, 30px); /* Tamaño mínimo de 20px, ideal de 3vw, máximo de 30px */
+    width: clamp(20px, 3vw, 30px); 
     margin-left: 5%; 
+}
+
+.license-container {
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f8f8a1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    bottom: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+.license-container a {
+    color: #3200e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.license-container a:hover {
+    text-decoration: underline;
+}
+
+.license-container img {
+    vertical-align: middle;
+    margin-left: 2px;
+    width: 15px;
+}
+
+.license-container .license-text {
+    display: inline-block;
+    margin: 0 5px;
 }
