@@ -34,7 +34,7 @@ header a:hover {
     text-decoration: overline;
 }
 
-header img {
+header img{
     width: clamp(100px, 7vw, 100px); /* Tamaño mínimo de 40px, ideal de 5vw, máximo de 60px */
     height: auto; 
 }
