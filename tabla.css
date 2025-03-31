@@ -7,7 +7,7 @@ table {
     width: 100%; 
     max-width: 700px; 
     margin: -200px auto; 
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .poster:hover{
@@ -16,6 +16,7 @@ table {
 
 th {
     text-align: center;
+    vertical-align: middle;
     padding: 10px; 
     background-color: rgba(14, 33, 117, 0.363);
     color: white;
@@ -23,7 +24,12 @@ th {
     font-family: 'Bodoni MT Black', serif;
     border: 2px solid white;
 }
-
+.contenedor-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 td {
     text-align: center;
     border: 2px solid white;
@@ -34,7 +40,9 @@ td {
     height: 200px; 
     object-fit: cover;
     border-radius: 10px;
-}
+    position: relative;
+    animation: moveSideToSide 2s infinite ease-in-out;
+}  
 
 td a {
     color: white;
@@ -50,6 +58,130 @@ td a:hover {
     color: #4682b4;
 }
 
+/*animaciones*/
+@keyframes wave {
+    0% { transform: translateY(0px); opacity: 0.8; }
+    50% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(0px); opacity: 0.8; }
+}
+
+.wave-text {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.wave-text span {
+    display: inline-block;
+    animation: wave 1s infinite ease-in-out;
+}
+
+.wave-text span:nth-child(1) { animation-delay: 0s; }
+.wave-text span:nth-child(2) { animation-delay: 0.1s; }
+.wave-text span:nth-child(3) { animation-delay: 0.2s; }
+.wave-text span:nth-child(4) { animation-delay: 0.3s; }
+.wave-text span:nth-child(5) { animation-delay: 0.4s; }
+.wave-text span:nth-child(6) { animation-delay: 0.5s; }
+.wave-text span:nth-child(7) { animation-delay: 0.6s; }
+.wave-text span:nth-child(8) { animation-delay: 0.7s; }
+.wave-text span:nth-child(9) { animation-delay: 0.8s; }
+.wave-text span:nth-child(10) { animation-delay: 0.9s; }
+.wave-text span:nth-child(11) { animation-delay: 1s; }
+
+
+@keyframes moveSideToSide {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.moving-image {
+    width: 150px;
+    animation: moveSideToSide 2s infinite ease-in-out;
+}
+
+
+
+@keyframes lightUp {
+    0% {
+        opacity: 0;
+        color: transparent;
+        text-shadow: none;
+    }
+    100% {
+        opacity: 1;
+        color: rgb(250, 255, 175);
+        text-shadow: 0 0 10px yellow, 0 0 20px red, 0 0 30px blue;
+    }
+}
+
+.illuminated-text {
+    display: inline-block;
+}
+
+.illuminated-text span {
+    display: inline-block;
+    animation: lightUp 1s forwards infinite;
+    animation-delay: 0s, 2s;
+}
+
+
+.illuminated-text span:nth-child(1) { animation-delay: 0s, 2s; }
+.illuminated-text span:nth-child(2) { animation-delay: 0.1s, 2.1s; }
+.illuminated-text span:nth-child(3) { animation-delay: 0.2s, 2.2s; }
+.illuminated-text span:nth-child(4) { animation-delay: 0.3s, 2.3s; }
+.illuminated-text span:nth-child(5) { animation-delay: 0.4s, 2.4s; }
+.illuminated-text span:nth-child(6) { animation-delay: 0.5s, 2.5s; }
+.illuminated-text span:nth-child(7) { animation-delay: 0.6s, 2.6s; }
+
+
+@keyframes fadeInOut {
+    0% {
+        color: black;      
+        opacity: 1;        
+    }
+    50% {
+        color: white;       
+        opacity: 1;
+    }
+    100% {
+        color: white;       
+        opacity: 0;         
+    }
+}
+
+.fading-text {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    animation: fadeInOut 5s infinite; 
+}
+
+@keyframes typing {
+    0% {
+        width: 0; 
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.typing-text {
+    font-family: 'Courier New', monospace;
+    white-space: nowrap;
+    overflow: hidden; 
+    border-right: 3px solid #333;
+    animation: typing 10s steps(50) 1s 1 normal both;
+    padding: 6px;
+}
 
 
 /*La página sin tabla*/
@@ -163,3 +295,31 @@ footer {
     border-color: rgb(0, 26, 255);
 }
 
+/* segunda tabla */
+table:nth-of-type(2) {  
+    width: 100%; 
+    max-width: 700px;
+    margin: 0 auto; 
+    margin-bottom: 50px;
+}
+
+
+table:nth-of-type(2) .img-table {
+    width: 300px;  
+    height: auto;
+}
+
+table:nth-of-type(2) td {
+    font-size: 1.7rem; 
+    padding: 10px; 
+}
+
+table:nth-of-type(2) audio {
+    width: 400px;
+}
+
+.typing-text, .fading-text {
+    font-size: 1.0rem;
+    white-space: normal; 
+   
+}
